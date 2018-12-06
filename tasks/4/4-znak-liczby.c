@@ -1,5 +1,4 @@
-//Workin
-
+//WORK IN PROGRESS
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,15 +7,20 @@ int main(void) {
   int x;
   int good = scanf("%i", &x);
 
-  int odd = (x + 10000) % 2 + 4;
-  int val = odd * good;
+  int val = (!good << 2) + ((x > 0) << 1) + (x == 0);
+
+
   switch(val) {
-    case 4: {
-      printf("%i is even", x);
+    case 0: {
+      printf("%i is negative", x);
       break;
     }
-    case 5: {
-      printf("%i is odd", x);
+    case 1: {
+      printf("%i is equal to 0", x);
+      break;
+    }
+    case 2: {
+      printf("%i is positive", x);
       break;
     }
     default: {

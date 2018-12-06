@@ -1,0 +1,6 @@
+{
+  "test": {
+    "gdb_executable": "c:/mingw/bin/gdb.exe",
+    "path": "C:/Users/pieczorx/Desktop/Projects/dante/tasks/1/1-hello-world.c"
+  }
+}
