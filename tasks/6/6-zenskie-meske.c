@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int max = 1000;
+  int max = 10;
   char a[max];
   printf("Wpisz imie:");
 
