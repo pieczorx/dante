@@ -1,18 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
+int getRandom(int min, int max) {
+  return rand() % (max + 1 - min) + min;
+}
 int main() {
-  int i=0, j=0;
-  int arr[10000];
-  char temp;
-  do {
-      scanf("%d%c", &arr[i], &temp);
-      i++;
-  } while(temp != '\n');
+  srand(time(NULL));
+  for(int i = 0; i < 100; i++) {
+    printf("%d\n", getRandom(5, 10));
 
-  for(j=0; j<i; j++) {
-    printf("%d ", arr[j]);
   }
-
-  return 0;
 }
